@@ -157,8 +157,8 @@ trainX1 = trainX[:,bestIndeces]
 testX1= testX[:,bestIndeces]
 
 #pca feature
-trainX2 = trainX[:,bestIndeces]
-testX2= testX[:,bestIndeces]
+trainX2 = trainX
+testX2= testX
 scaler=StandardScaler()
 scaler.fit(trainX2)
 trainX2=scaler.transform(trainX2)
